@@ -14,8 +14,8 @@ st.dataframe(df)
 # Lọc giao dịch bất thường
 anomalies = df[df['anomaly'] == -1]
 
-st.subheader("Giao dịch bất thường")
+st.subheader("Các giao dịch bất thường")
 
 st.dataframe(anomalies)
 
-st.write("Số giao dịch bất thường:", len(anomalies))
+st.write("Số giao dịch bất thường gồm:", len(anomalies))
