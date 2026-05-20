@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.title("Phát hiện giao dịch bất thường")
+st.title(" Phát hiện giao dịch bất thường")
 
 # Đọc kết quả
 df = pd.read_csv('data/anomaly_results.csv')
