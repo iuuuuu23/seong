@@ -105,6 +105,7 @@ def index():
                 ["date", "amount", "customer_id", "transaction_type", "z_score"],
             ].sort_values("z_score", ascending=False).head(10).to_dict(orient="records"),
         }
+
     preview = data.head(10).to_dict(orient="records")
     transaction_types = list(TRANSACTION_TYPE_MAP.keys())
 
@@ -122,3 +123,4 @@ if __name__ == "__main__":
     url = "http://127.0.0.1:8501"
     threading.Timer(1.0, lambda: webbrowser.open(url)).start()
     app.run(debug=True, port=8501)
+
