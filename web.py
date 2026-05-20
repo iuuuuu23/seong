@@ -30,7 +30,7 @@ def run_app():
         # Bộ lọc danh sách bảng dữ liệu
         st.markdown("---")
         st.subheader("🔍 Danh sách chi tiết giao dịch")
-        filter_status = st.selectbox("Lọc danh sách theo trạng thái giao dịch:", ["Tất cả giao dịch", "Chỉ giao dịch bất thường", "Chỉ giao dịch bình thường"])
+        filter_status = st.selectbox("Lọc danh sách theo trạng thái các giao dịch:", ["Tất cả giao dịch", "Chỉ giao dịch bất thường", "Chỉ giao dịch bình thường"])
         
         if filter_status == "Chỉ giao dịch bất thường":
             st.dataframe(anomalies, use_container_width=True)
